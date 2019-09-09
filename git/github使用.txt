@@ -1,0 +1,30 @@
+第一步：配置用户名和邮箱
+			git config --global user.name 'GitHub账号名'
+			git config --global user.email	'注册GitHub时候的邮箱地址'
+			
+			git config --list	查看是否配置成功
+			
+			
+第二步：在git里面输入ssh-keygen命令，生成协议
+			根据提示的路径找到公用的密钥
+	
+	
+第三步：在github里面添加密钥
+
+
+第四步：登录github官网，创建一个仓库，这个仓库名的格式为 => 用户名.github.io	并且复制仓库的ssh协议
+
+
+第五步：在git窗口当中添加这个仓库的协议		git remote add origin  git@github.com:Alicelonely/Alicelonely.github.io.git => 这里是ssh协议
+
+
+第六步：新建文件夹，在文件夹里面创建一个index.html文件
+
+
+第七步：在这个文件里面右键打开github，输入git init命令		初始化仓库
+
+
+第八步：把本地的文件资源提交到暂存区，再提交到本地仓库		git add . 			git commit -m 'add practice'	''里面是添加的注释
+
+
+第九步：把本地的文件资源提交到远程仓库也就是github平台		git push origin master
